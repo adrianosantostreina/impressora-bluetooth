@@ -1,0 +1,127 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 570
+  ClientWidth = 385
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 385.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Contents
+      Size.Width = 385.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Impressora DPP 250'
+    end
+  end
+  object ListBox1: TListBox
+    Align = Top
+    Position.Y = 48.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 123.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 385.000000000000000000
+    Viewport.Height = 123.000000000000000000
+    object ListBoxItem1: TListBoxItem
+      Size.Width = 385.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object cbxDevices: TComboBox
+        Align = Client
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 248.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object btnListar: TButton
+        Align = Right
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 256.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Listar'
+        OnClick = btnListarClick
+      end
+    end
+    object ListBoxItem2: TListBoxItem
+      Position.Y = 40.000000000000000000
+      Size.Width = 385.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object btnConectar: TButton
+        Align = Right
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 256.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Conectar'
+        OnClick = btnConectarClick
+      end
+      object lblStatus: TLabel
+        Align = Client
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Size.Width = 248.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Status'
+      end
+    end
+    object ListBoxItem3: TListBoxItem
+      Position.Y = 80.000000000000000000
+      Size.Width = 385.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object btnImprimir: TButton
+        Align = Center
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Imprimir'
+        OnClick = btnImprimirClick
+      end
+    end
+  end
+  object Bluetooth1: TBluetooth
+    Enabled = True
+    Left = 57
+    Top = 208
+  end
+end
