@@ -7,13 +7,18 @@
     <Transaction>2016/11/25 11:35:48.000.412,=C:\Users\adrianosantosvm\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2016/12/06 21:47:53.000.421,=C:\Users\adrianosantosvm\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2016/12/15 21:55:53.000.427,=C:\Users\adrianosantosvm\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/01/26 19:35:12.832,=C:\Users\adrianosantosvm\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/01/26 19:35:44.576,C:\TDevRocks on Demand\Bluetooth\Bluetooth on Demand\UntPrincipal.pas=C:\Users\adrianosantosvm\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/01/26 19:35:44.576,C:\TDevRocks on Demand\Bluetooth\Bluetooth on Demand\UntPrincipal.fmx=C:\Users\adrianosantosvm\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2017/01/26 19:36:02.148,C:\TDevRocks on Demand\Bluetooth\Bluetooth on Demand\ImpressaoBT.dproj=C:\Users\adrianosantosvm\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/01/26 19:35:12.000.832,=C:\Users\adrianosantosvm\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/01/26 19:35:44.000.576,C:\TDevRocks on Demand\Bluetooth\Bluetooth on Demand\UntPrincipal.fmx=C:\Users\adrianosantosvm\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2017/01/26 19:35:44.000.576,C:\TDevRocks on Demand\Bluetooth\Bluetooth on Demand\UntPrincipal.pas=C:\Users\adrianosantosvm\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/01/26 19:36:02.000.148,C:\TDevRocks on Demand\Bluetooth\Bluetooth on Demand\ImpressaoBT.dproj=C:\Users\adrianosantosvm\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2018/05/18 14:05:10.000.777,=C:\Novos Projetos Git\038-S1Software\impressora\ssESCPOSPrintBitmap.pas</Transaction>
+    <Transaction>2018/05/18 14:14:12.000.813,=C:\Novos Projetos Git\038-S1Software\impressora\unBoletoPOS.pas</Transaction>
+    <Transaction>2018/05/22 10:08:22.000.439,C:\Novos Projetos Git\038-S1Software\impressora\unBoletoPOS.pas=</Transaction>
+    <Transaction>2018/05/22 10:57:32.000.438,=C:\Novos Projetos Git\038-S1Software\impressora\utils\uAguarde.pas</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile iOSSimulator="iPhone5" Android="0023109677"/>
 		<PMac-Simulator iOSSimulator="iPhone5"/>
+		<PmacOS iOSSimulator="iPhone5"/>
 	</ActiveMobileDevice>
 </BorlandProject>

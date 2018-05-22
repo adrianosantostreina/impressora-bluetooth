@@ -24,6 +24,7 @@
             <Required>True</Required>
         </DeployFile>
     </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Linux64'"/>
     <ItemGroup Condition="'$(Platform)'=='OSX32'">
         <DeployFile Include="$(BDS)\Redist\osx32\libcgsqlite3.dylib">
             <RemoteDir>ImpressaoBT.app\Contents\MacOS\</RemoteDir>
@@ -90,10 +91,10 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_426x320.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ImpressaoBT\res\drawable-small\</RemoteDir>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_960x720.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ImpressaoBT\res\drawable-xlarge\</RemoteDir>
             <RemoteName>splash_image.png</RemoteName>
-            <DeployClass>Android_SplashImage426</DeployClass>
+            <DeployClass>Android_SplashImage960</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -103,6 +104,15 @@
             <RemoteDir>ImpressaoBT\res\drawable-normal\</RemoteDir>
             <RemoteName>splash_image.png</RemoteName>
             <DeployClass>Android_SplashImage470</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_426x320.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ImpressaoBT\res\drawable-small\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage426</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -136,15 +146,6 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_960x720.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ImpressaoBT\res\drawable-xlarge\</RemoteDir>
-            <RemoteName>splash_image.png</RemoteName>
-            <DeployClass>Android_SplashImage960</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_48x48.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>ImpressaoBT\res\drawable-mdpi\</RemoteDir>
             <RemoteName>ic_launcher.png</RemoteName>
@@ -163,19 +164,19 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ImpressaoBT\classes\</RemoteDir>
-            <RemoteName>classes.dex</RemoteName>
-            <DeployClass>AndroidClassesDexFile</DeployClass>
+        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ImpressaoBT\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>gdbserver</RemoteName>
+            <DeployClass>AndroidGDBServer</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ImpressaoBT\library\lib\armeabi-v7a\</RemoteDir>
-            <RemoteName>gdbserver</RemoteName>
-            <DeployClass>AndroidGDBServer</DeployClass>
+        <DeployFile Include="Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ImpressaoBT\classes\</RemoteDir>
+            <RemoteName>classes.dex</RemoteName>
+            <DeployClass>AndroidClassesDexFile</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
